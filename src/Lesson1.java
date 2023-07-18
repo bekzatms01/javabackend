@@ -1,5 +1,4 @@
-import java.lang.reflect.Array;
-
+import java.util.Scanner;
 public class Lesson1 {
     public static void main(String [] args) {
         byte value1 = 12;
@@ -12,17 +11,16 @@ public class Lesson1 {
         float value6 = 78.5f;
         boolean isActor = true;
 
-        int height = 5;
-        int width = 7;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Enter a height: ");
+        int height = input.nextInt();
+
+        System.out.println("Enter a width: ");
+        int width = input.nextInt();
         int rectangleArea = height * width;
 
-        int val = 44;
-        System.out.println(val);
+        System.out.println("Area: " + rectangleArea);
 
-
-
-
-
-        System.out.println(rectangleArea);
     }
 }
